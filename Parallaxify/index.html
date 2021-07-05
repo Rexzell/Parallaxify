@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallaxify</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/Icon.png"/>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+  <div class="banner">
+    <div class="container">
+      <div id="scene">
+        <h2 id="text">
+          <span data-depth-y="2">P</span>
+          <span data-depth-y="-2">a</span>
+          <span data-depth-y="2">r</span>
+          <span data-depth-y="-2">a</span>
+          <span data-depth-y="2">l</span>
+          <span data-depth-y="-2">l</span>
+          <span data-depth-y="2">a</span>
+          <span data-depth-y="-2">x</span>
+          <span data-depth-y="2">i</span>
+          <span data-depth-y="-2">f</span>
+          <span data-depth-y="2">y</span>
+        </h2>
+
+        <div class="layer position" data-depth="1"><img src="images/htmlPic.png" /></div>
+        <div class="layer" data-depth="-1"><img src="images/cssPic.png" /></div>
+        <div class="layer position2" data-depth="1"><img src="images/javascriptPic.png" /></div>
+        <div class="layer position" data-depth="-1"><img src="images/bootstrapPic.png" /></div>
+        <div class="layer" data-depth="1"><img src="images/reactPic.png" /></div>
+        <div class="layer position2" data-depth="-1"><img src="images/sqlPic.png" /></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner2">
+    <div class="container2">
+      <div id="scene2">
+        <h2 id="text2">
+          <span data-depth="1">Nature</span>
+        </h2>
+
+        <div class="layer2" data-depth-x="0.8"><img src="images/nature.png" /></div>
+        <div class="layer2 positionA" data-depth="1"><img src="images/sun.png" /></div>
+        <div class="layer2 positionA2" data-depth="-0.8"><img src="images/birds.png" /></div>
+        <div class="layer2 positionA3" data-depth="1"><img src="images/butterfly1.png" /></div>
+        <div class="layer2 positionA4" data-depth="1.2"><img src="images/butterfly2.png" /></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner3">
+    <div class="container3">
+      <div id="scene3">
+        <h2 id="text3">
+          <span data-depth="1">Mountain</span>
+        </h2>
+
+        <div class="layer3 positionB" data-depth-x="0.6"><img src="images/moon.png" /></div>
+        <div class="layer3" data-depth-x="0.8"><img src="images/mountain.png" /></div>
+        <div class="layer3 positionB2" data-depth-x="0.8"><img src="images/northernLights.png" /></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+  <script>
+    //Parallaxify Section
+    var text = document.getElementById('text');
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(text);
+    var parallaxInstance = new Parallax(scene);
+
+    //Nature Section
+    var text2 = document.getElementById('text2');
+    var scene2 = document.getElementById('scene2');
+    var parallaxInstance = new Parallax(text2);
+    var parallaxInstance = new Parallax(scene2);
+
+    //Mountain Section
+    var text3 = document.getElementById('text3');
+    var scene3 = document.getElementById('scene3');
+    var parallaxInstance = new Parallax(text3);
+    var parallaxInstance = new Parallax(scene3);
+  </script>
+</body>
+
+</html>
